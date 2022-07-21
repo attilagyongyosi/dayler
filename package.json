@@ -1,0 +1,13 @@
+{
+    "name": "@attilagyongyosi/dayler",
+    "version": "0.1.0",
+    "description": "Personal day-management, calendar and task tracking platform.",
+    "scripts": {
+        "build": "echo 'Build done.'"
+    },
+    "author": {
+        "email": "attilagyongyosi0@gmail.com",
+        "name": "Attila Gyöngyösi",
+        "url": "https://attilagyongyosi.com"
+    }
+}
