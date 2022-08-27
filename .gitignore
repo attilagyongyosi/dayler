@@ -1,2 +1,5 @@
 # IDEs & Editors
 .idea/
+
+# Packages
+node_modules
