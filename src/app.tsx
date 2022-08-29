@@ -1,9 +1,5 @@
-function App() {
+export function App() {
     return (
-        <div>
-            <h1>This is the beginning of a beautiful friendship!</h1>
-        </div>
+        <h1 data-testid="dlr-app-heading">This is the beginning of a beautiful friendship!</h1>
     )
 }
-
-export default App
