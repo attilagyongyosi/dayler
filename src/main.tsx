@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './app';
+import { App } from './app';
 
 const appElementId = 'app';
 const appElement = document.getElementById(appElementId) as HTMLElement;
