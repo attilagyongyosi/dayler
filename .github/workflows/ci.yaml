@@ -1,0 +1,32 @@
+name: Dayler - Continuous Integration & Deployment Pipeline
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            -   name: Checkout Code
+                uses: actions/checkout@v2
+
+            -   name: Setting up Git credentials
+                uses: oleksiyrudenko/gha-git-credentials@v2-latest
+                with:
+                    token: '${{ secrets.PERSONAL_ACCESS_TOKEN }}'
+
+            -   name: Set up Node.js
+                uses: actions/setup-node@v2
+                with:
+                    node-version: 16
+
+            -   name: Install Dependencies
+                run: npm run install
+
+            -   name: Execute tests
+                run: npm run test
+
+            -   name: Build Production Package
+                run: npm run build
