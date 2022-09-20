@@ -9,7 +9,8 @@
         "preview": "vite preview",
         "test": "vitest run",
         "test:dev": "vitest",
-        "lint": "eslint --ext .ts,.tsx src/",
+        "lint": "concurrently --timings npm:lint:*",
+        "lint:ts": "eslint --ext .ts,.tsx src/",
         "lint:paths": "path-linter"
     },
     "author": {
@@ -32,6 +33,7 @@
         "@typescript-eslint/eslint-plugin": "5.38.0",
         "@vitejs/plugin-react": "2.0.1",
         "@vitest/ui": "0.22.1",
+        "concurrently": "7.4.0",
         "eslint": "8.23.1",
         "jsdom": "20.0.0",
         "vite": "3.0.9",
