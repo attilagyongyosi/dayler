@@ -4,6 +4,7 @@
     "description": "Personal day-management, calendar and task tracking platform.",
     "type": "module",
     "scripts": {
+        "clean": "rimraf node_modules dist",
         "dev": "vite",
         "build": "tsc && vite build",
         "preview": "vite preview",
@@ -38,6 +39,7 @@
         "eslint": "8.23.1",
         "jsdom": "20.0.0",
         "libyear": "0.8.0",
+        "rimraf": "3.0.2",
         "vite": "3.0.9",
         "vitest": "0.22.1"
     }
