@@ -25,10 +25,13 @@ jobs:
             -   name: Install Dependencies
                 run: npm install
 
-            -   name: Linting package
+            -   name: Analyze Dependency Drift
+                run: npm run metric:libyear
+
+            -   name: Lint Package
                 run: npm run lint
 
-            -   name: Execute tests
+            -   name: Execute Tests
                 run: npm run test
 
             -   name: Build Production Package
