@@ -1,0 +1,19 @@
+{
+    "threshold": {
+        "drift": {
+            "collective": 1
+        },
+        "pulse": {
+            "collective": 5
+        },
+        "major": {
+            "collective": 2
+        },
+        "minor": {
+            "collective": 20
+        },
+        "patch": {
+            "collective": 40
+        }
+    }
+}
