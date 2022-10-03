@@ -1,0 +1,9 @@
+component: website
+name: dayler
+org: attilagyongyosi
+app: dayler
+
+inputs:
+    src: ./dist
+    region: eu-central-1
+    bucketName: dayler
